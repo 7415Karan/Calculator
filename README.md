@@ -23,7 +23,7 @@ choice = '''1 for sum
 while True :
     print(choice)
     c = int(input("enter your choice : "))
-    if c == 5:
+    if c >= 5:
         print("*****************")
         break
     x = float(input("enter the first number: "))
