@@ -1,11 +1,11 @@
 # Calculator
-def add():
+def add(x,y):
     return x + y
 
-def sub():
+def sub(x,y):
     return x - y
 
-def mul():
+def mul(x,y):
     return x*y
 
 def div(x,y):
@@ -23,8 +23,11 @@ choice = '''1 for sum
 while True :
     print(choice)
     c = int(input("enter your choice : "))
-    print("*************")
+    if c == 5:
+        print("*****************")
+        break
     x = float(input("enter the first number: "))
+    print("*************")
     y = float(input("enter the second number: "))
 
     if c == 1 :
@@ -39,8 +42,6 @@ while True :
     elif c == 4 :
         print("The Division of numbers is: ", x/y)
         div()
-    elif c == 5 :
-        break
     else:
         print("enter valid option")
     
